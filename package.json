@@ -1,0 +1,32 @@
+{
+  "name": "birthday-records",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.5.0",
+    "@material-ui/icons": "^2.0.2",
+    "create-react-app": "^1.4.3",
+    "eslint": "^5.4.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17",
+    "save": "^2.3.1",
+    "event-stream": "3.3.4"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
+    "pretest": "npm install",
+    "test": "rm -rf ./unit.xml; CI=true TEST_REPORT_FILENAME=./unit.xml ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit-reporter"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "expect": "^21.2.1",
+    "jest-junit-reporter": "^1.1.0",
+    "react-test-renderer": "^16.2.0",
+    "sinon": "^6.1.5"
+  }
+}
